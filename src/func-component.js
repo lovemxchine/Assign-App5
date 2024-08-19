@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const FuncCompo =()=> {
+const MessageBox =()=> {
     let [text,setText] = useState('Hello World')
     let [size,setSize] = React.useState(16)
 
@@ -27,8 +27,8 @@ const FuncCompo =()=> {
         <div style = {{textAlign:'center',marginTop:20}}>
             <div style={msgboxStyle}>{text}</div><br/><br/>
             <button onClick={onClickSetText}>ข้อความ</button>&nbsp;
-            <button onClick={onClickZoomIn}>text</button>&nbsp;
-            <button onClick={()=> setSize(size-1)}>size</button>
+            <button onClick={onClickZoomIn}>เพิ่มขนาด</button>&nbsp;
+            <button onClick={()=> setSize(size-1)}>ลดขนาด</button>
 
 
         </div>
@@ -36,4 +36,4 @@ const FuncCompo =()=> {
 
 }
 
-export default FuncCompo
+export default MessageBox
