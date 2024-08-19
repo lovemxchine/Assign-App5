@@ -1,7 +1,7 @@
 import React from "react";
-// import { EventData1 } from "./event-data";
+import RefsFunc from "./refs-func";
 
-import MessageBox from "./func-component";
+import MessageBox from "./state-func";
 export default function App() {
   return <MessageBox />;
 }
